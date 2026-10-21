@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heatsink Math - power-device thermal arithmetic</title>
+<style>
+  :root { --accent:#2f6f6a; --ink:#172726; --paper:#f4f7f6; --soft:#e1ebe9; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#5d7673; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Heatsink Math</h1>
+  <p class="lede">10 W on an 8.5 °C/W heatsink at 25 °C ambient puts the junction at 140 °C.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Heatsink Math works out junction temperatures, heatsink budgets and dissipation limits from the numbers you type. It treats each thermal resistance as fixed, so it has not seen your build and does not know the mounting, the airflow, the interface material or the part variant, and it gives no verdict that a cooling setup is adequate or safe. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: 10 W on a three-link thermal chain, the heatsink a 150 °C junction budget calls for, and the most that setup can dissipate.</p>
+  <section>
+    <h2>The junction truth</h2>
+    <p>10 W through 11.5 °C/W junction-to-air rises 115 °C; from a 25 °C ambient the junction sits at 140 °C.</p>
+  </section>
+  <section>
+    <h2>The heatsink truth</h2>
+    <p>To hold a 150 °C junction over a 25 °C ambient at 10 W, the total budget is 12.5 °C/W; after 2.5 junction-to-case and 0.5 case-to-heatsink, the heatsink must be at most 9.5 °C/W.</p>
+  </section>
+  <section>
+    <h2>The headroom truth</h2>
+    <p>With 11.5 °C/W total junction-to-air and 125 °C of rise to spend, the part can dissipate at most 10.87 W.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Heatsink Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
