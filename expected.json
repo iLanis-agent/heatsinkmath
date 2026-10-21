@@ -1,0 +1,1159 @@
+{
+ "cases": [
+  {
+   "fn": "junction",
+   "args": [
+    "10",
+    "25",
+    "2.5",
+    "0.5",
+    "8.5"
+   ],
+   "expect": "10 W through 11.5 °C/W junction-to-air rises 115 °C; from a 25 °C ambient the junction sits at 140 °C."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "150",
+    "25",
+    "10",
+    "2.5",
+    "0.5"
+   ],
+   "expect": "To hold a 150 °C junction over a 25 °C ambient at 10 W, the total budget is 12.5 °C/W; after 2.5 junction-to-case and 0.5 case-to-heatsink, the heatsink must be at most 9.5 °C/W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "150",
+    "25",
+    "2.5",
+    "0.5",
+    "8.5"
+   ],
+   "expect": "With 11.5 °C/W total junction-to-air and 125 °C of rise to spend, the part can dissipate at most 10.87 W."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "69943.7",
+    "297.55",
+    "835.13",
+    "591.84",
+    "183.86"
+   ],
+   "expect": "69943.7 W through 1610.83 °C/W junction-to-air rises 112667410.27 °C; from a 297.55 °C ambient the junction sits at 112667707.82 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "91277.28",
+    "50.32",
+    "831.12",
+    "974.16",
+    "578.2"
+   ],
+   "expect": "91277.28 W through 2383.48 °C/W junction-to-air rises 217557571.33 °C; from a 50.32 °C ambient the junction sits at 217557621.65 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "20594.2",
+    "245.15",
+    "289.45",
+    "392.61",
+    "280.93"
+   ],
+   "expect": "20594.2 W through 962.99 °C/W junction-to-air rises 19832008.66 °C; from a 245.15 °C ambient the junction sits at 19832253.81 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "34701.51",
+    "127.44",
+    "956.33",
+    "962.48",
+    "728.87"
+   ],
+   "expect": "34701.51 W through 2647.68 °C/W junction-to-air rises 91878494 °C; from a 127.44 °C ambient the junction sits at 91878621.44 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "75620.48",
+    "196.88",
+    "303.16",
+    "368.14",
+    "909.57"
+   ],
+   "expect": "75620.48 W through 1580.87 °C/W junction-to-air rises 119546148.22 °C; from a 196.88 °C ambient the junction sits at 119546345.1 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "41663.75",
+    "3.64",
+    "720.56",
+    "975.07",
+    "95.91"
+   ],
+   "expect": "41663.75 W through 1791.54 °C/W junction-to-air rises 74642274.68 °C; from a 3.64 °C ambient the junction sits at 74642278.32 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "42895.67",
+    "31.78",
+    "317.53",
+    "305.15",
+    "3.3"
+   ],
+   "expect": "42895.67 W through 625.98 °C/W junction-to-air rises 26851831.51 °C; from a 31.78 °C ambient the junction sits at 26851863.29 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "77657.51",
+    "186.36",
+    "515.89",
+    "390.67",
+    "842.7"
+   ],
+   "expect": "77657.51 W through 1749.26 °C/W junction-to-air rises 135843175.94 °C; from a 186.36 °C ambient the junction sits at 135843362.3 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "36768.62",
+    "123.49",
+    "493.47",
+    "947.78",
+    "657.12"
+   ],
+   "expect": "36768.62 W through 2098.37 °C/W junction-to-air rises 77154169.15 °C; from a 123.49 °C ambient the junction sits at 77154292.64 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "73867.58",
+    "206.43",
+    "227.16",
+    "874.31",
+    "636.69"
+   ],
+   "expect": "73867.58 W through 1738.16 °C/W junction-to-air rises 128393672.85 °C; from a 206.43 °C ambient the junction sits at 128393879.28 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "10730.95",
+    "299.62",
+    "887.11",
+    "289.43",
+    "758.13"
+   ],
+   "expect": "10730.95 W through 1934.67 °C/W junction-to-air rises 20760847.04 °C; from a 299.62 °C ambient the junction sits at 20761146.66 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "61940.51",
+    "219.44",
+    "433.36",
+    "869.74",
+    "636.11"
+   ],
+   "expect": "61940.51 W through 1939.21 °C/W junction-to-air rises 120115656.4 °C; from a 219.44 °C ambient the junction sits at 120115875.84 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "49943.59",
+    "295.82",
+    "296.28",
+    "947.9",
+    "851.38"
+   ],
+   "expect": "49943.59 W through 2095.56 °C/W junction-to-air rises 104659789.46 °C; from a 295.82 °C ambient the junction sits at 104660085.28 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "11833.39",
+    "289.25",
+    "891.36",
+    "392.28",
+    "648.33"
+   ],
+   "expect": "11833.39 W through 1931.97 °C/W junction-to-air rises 22861754.48 °C; from a 289.25 °C ambient the junction sits at 22862043.73 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "7764.68",
+    "213.56",
+    "518.06",
+    "690.74",
+    "416.33"
+   ],
+   "expect": "7764.68 W through 1625.13 °C/W junction-to-air rises 12618614.41 °C; from a 213.56 °C ambient the junction sits at 12618827.97 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "20785.37",
+    "149.77",
+    "327.48",
+    "361.5",
+    "380.6"
+   ],
+   "expect": "20785.37 W through 1069.58 °C/W junction-to-air rises 22231616.04 °C; from a 149.77 °C ambient the junction sits at 22231765.81 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "67008.94",
+    "59.73",
+    "720.63",
+    "505.43",
+    "15.8"
+   ],
+   "expect": "67008.94 W through 1241.86 °C/W junction-to-air rises 83215722.23 °C; from a 59.73 °C ambient the junction sits at 83215781.96 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "509.25",
+    "106.32",
+    "666.34",
+    "179.37",
+    "102.49"
+   ],
+   "expect": "509.25 W through 948.2 °C/W junction-to-air rises 482870.85 °C; from a 106.32 °C ambient the junction sits at 482977.17 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "43251.44",
+    "63.77",
+    "459.08",
+    "585.46",
+    "685.7"
+   ],
+   "expect": "43251.44 W through 1730.24 °C/W junction-to-air rises 74835371.55 °C; from a 63.77 °C ambient the junction sits at 74835435.32 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "11270.85",
+    "143.01",
+    "325.66",
+    "953.51",
+    "937.8"
+   ],
+   "expect": "11270.85 W through 2216.97 °C/W junction-to-air rises 24987136.32 °C; from a 143.01 °C ambient the junction sits at 24987279.33 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "91108.92",
+    "152.68",
+    "244.12",
+    "49.33",
+    "878.12"
+   ],
+   "expect": "91108.92 W through 1171.57 °C/W junction-to-air rises 106740477.4 °C; from a 152.68 °C ambient the junction sits at 106740630.08 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "64438.21",
+    "69.94",
+    "221.59",
+    "266.84",
+    "625.68"
+   ],
+   "expect": "64438.21 W through 1114.11 °C/W junction-to-air rises 71791254.14 °C; from a 69.94 °C ambient the junction sits at 71791324.08 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "26862.04",
+    "9.76",
+    "458.86",
+    "461.4",
+    "471.53"
+   ],
+   "expect": "26862.04 W through 1391.79 °C/W junction-to-air rises 37386318.65 °C; from a 9.76 °C ambient the junction sits at 37386328.41 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "93145.32",
+    "247.59",
+    "704",
+    "382.81",
+    "350.62"
+   ],
+   "expect": "93145.32 W through 1437.43 °C/W junction-to-air rises 133889877.33 °C; from a 247.59 °C ambient the junction sits at 133890124.92 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "47412.86",
+    "81.22",
+    "769.75",
+    "187.85",
+    "424.41"
+   ],
+   "expect": "47412.86 W through 1382.01 °C/W junction-to-air rises 65525046.65 °C; from a 81.22 °C ambient the junction sits at 65525127.87 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "18593.31",
+    "55.76",
+    "792.95",
+    "44.31",
+    "350.15"
+   ],
+   "expect": "18593.31 W through 1187.41 °C/W junction-to-air rises 22077882.23 °C; from a 55.76 °C ambient the junction sits at 22077937.99 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "71719.95",
+    "200.26",
+    "549.54",
+    "382.22",
+    "189.21"
+   ],
+   "expect": "71719.95 W through 1120.97 °C/W junction-to-air rises 80395912.35 °C; from a 200.26 °C ambient the junction sits at 80396112.61 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "8520.23",
+    "220.34",
+    "999.73",
+    "664.4",
+    "879.7"
+   ],
+   "expect": "8520.23 W through 2543.83 °C/W junction-to-air rises 21674016.68 °C; from a 220.34 °C ambient the junction sits at 21674237.02 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "1670.05",
+    "254.43",
+    "276.82",
+    "90.31",
+    "305.72"
+   ],
+   "expect": "1670.05 W through 672.85 °C/W junction-to-air rises 1123693.14 °C; from a 254.43 °C ambient the junction sits at 1123947.57 °C."
+  },
+  {
+   "fn": "junction",
+   "args": [
+    "45232.39",
+    "299.86",
+    "180.67",
+    "899.31",
+    "109.97"
+   ],
+   "expect": "45232.39 W through 1189.95 °C/W junction-to-air rises 53824282.48 °C; from a 299.86 °C ambient the junction sits at 53824582.34 °C."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "243.05",
+    "7.2",
+    "29.05",
+    "0.75",
+    "6.77"
+   ],
+   "expect": "To hold a 243.05 °C junction over a 7.2 °C ambient at 29.05 W, the total budget is 8.12 °C/W; after 0.75 junction-to-case and 6.77 case-to-heatsink, the heatsink must be at most 0.6 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "298.9",
+    "76.51",
+    "13.96",
+    "0.3",
+    "4.23"
+   ],
+   "expect": "To hold a 298.9 °C junction over a 76.51 °C ambient at 13.96 W, the total budget is 15.93 °C/W; after 0.3 junction-to-case and 4.23 case-to-heatsink, the heatsink must be at most 11.4 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "221.67",
+    "1.12",
+    "18.14",
+    "7.74",
+    "3.71"
+   ],
+   "expect": "To hold a 221.67 °C junction over a 1.12 °C ambient at 18.14 W, the total budget is 12.16 °C/W; after 7.74 junction-to-case and 3.71 case-to-heatsink, the heatsink must be at most 0.71 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "283.97",
+    "174.79",
+    "7.42",
+    "7.31",
+    "2.29"
+   ],
+   "expect": "To hold a 283.97 °C junction over a 174.79 °C ambient at 7.42 W, the total budget is 14.71 °C/W; after 7.31 junction-to-case and 2.29 case-to-heatsink, the heatsink must be at most 5.11 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "265.41",
+    "73.11",
+    "4.33",
+    "2.14",
+    "3.73"
+   ],
+   "expect": "To hold a 265.41 °C junction over a 73.11 °C ambient at 4.33 W, the total budget is 44.41 °C/W; after 2.14 junction-to-case and 3.73 case-to-heatsink, the heatsink must be at most 38.54 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "132.39",
+    "87.11",
+    "3.59",
+    "4.52",
+    "3.63"
+   ],
+   "expect": "To hold a 132.39 °C junction over a 87.11 °C ambient at 3.59 W, the total budget is 12.61 °C/W; after 4.52 junction-to-case and 3.63 case-to-heatsink, the heatsink must be at most 4.46 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "275.5",
+    "27.8",
+    "26.77",
+    "0.66",
+    "7.26"
+   ],
+   "expect": "To hold a 275.5 °C junction over a 27.8 °C ambient at 26.77 W, the total budget is 9.25 °C/W; after 0.66 junction-to-case and 7.26 case-to-heatsink, the heatsink must be at most 1.33 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "259",
+    "25.85",
+    "12.6",
+    "1.64",
+    "7.27"
+   ],
+   "expect": "To hold a 259 °C junction over a 25.85 °C ambient at 12.6 W, the total budget is 18.5 °C/W; after 1.64 junction-to-case and 7.27 case-to-heatsink, the heatsink must be at most 9.59 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "143.67",
+    "51.86",
+    "9.64",
+    "1.85",
+    "5.8"
+   ],
+   "expect": "To hold a 143.67 °C junction over a 51.86 °C ambient at 9.64 W, the total budget is 9.52 °C/W; after 1.85 junction-to-case and 5.8 case-to-heatsink, the heatsink must be at most 1.87 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "251.94",
+    "22.06",
+    "23.44",
+    "1.21",
+    "3.05"
+   ],
+   "expect": "To hold a 251.94 °C junction over a 22.06 °C ambient at 23.44 W, the total budget is 9.81 °C/W; after 1.21 junction-to-case and 3.05 case-to-heatsink, the heatsink must be at most 5.55 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "236.13",
+    "9.95",
+    "8.39",
+    "6.35",
+    "3.35"
+   ],
+   "expect": "To hold a 236.13 °C junction over a 9.95 °C ambient at 8.39 W, the total budget is 26.96 °C/W; after 6.35 junction-to-case and 3.35 case-to-heatsink, the heatsink must be at most 17.26 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "244.22",
+    "14.14",
+    "9.64",
+    "2.26",
+    "5.41"
+   ],
+   "expect": "To hold a 244.22 °C junction over a 14.14 °C ambient at 9.64 W, the total budget is 23.87 °C/W; after 2.26 junction-to-case and 5.41 case-to-heatsink, the heatsink must be at most 16.2 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "264.53",
+    "35.63",
+    "2.26",
+    "1.31",
+    "6.51"
+   ],
+   "expect": "To hold a 264.53 °C junction over a 35.63 °C ambient at 2.26 W, the total budget is 101.28 °C/W; after 1.31 junction-to-case and 6.51 case-to-heatsink, the heatsink must be at most 93.46 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "165.63",
+    "78.52",
+    "2.04",
+    "7.05",
+    "7.94"
+   ],
+   "expect": "To hold a 165.63 °C junction over a 78.52 °C ambient at 2.04 W, the total budget is 42.7 °C/W; after 7.05 junction-to-case and 7.94 case-to-heatsink, the heatsink must be at most 27.71 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "247.3",
+    "14.87",
+    "28.06",
+    "5.16",
+    "0.01"
+   ],
+   "expect": "To hold a 247.3 °C junction over a 14.87 °C ambient at 28.06 W, the total budget is 8.28 °C/W; after 5.16 junction-to-case and 0.01 case-to-heatsink, the heatsink must be at most 3.11 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "299.84",
+    "215.35",
+    "3.32",
+    "3.95",
+    "6.58"
+   ],
+   "expect": "To hold a 299.84 °C junction over a 215.35 °C ambient at 3.32 W, the total budget is 25.45 °C/W; after 3.95 junction-to-case and 6.58 case-to-heatsink, the heatsink must be at most 14.92 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "271.98",
+    "28.26",
+    "25",
+    "1.21",
+    "6.81"
+   ],
+   "expect": "To hold a 271.98 °C junction over a 28.26 °C ambient at 25 W, the total budget is 9.75 °C/W; after 1.21 junction-to-case and 6.81 case-to-heatsink, the heatsink must be at most 1.73 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "264.77",
+    "85.72",
+    "5.47",
+    "0.57",
+    "2.16"
+   ],
+   "expect": "To hold a 264.77 °C junction over a 85.72 °C ambient at 5.47 W, the total budget is 32.73 °C/W; after 0.57 junction-to-case and 2.16 case-to-heatsink, the heatsink must be at most 30 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "272.41",
+    "28.98",
+    "12.7",
+    "5.38",
+    "6.81"
+   ],
+   "expect": "To hold a 272.41 °C junction over a 28.98 °C ambient at 12.7 W, the total budget is 19.17 °C/W; after 5.38 junction-to-case and 6.81 case-to-heatsink, the heatsink must be at most 6.98 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "282.48",
+    "96.94",
+    "4.4",
+    "2.07",
+    "2.83"
+   ],
+   "expect": "To hold a 282.48 °C junction over a 96.94 °C ambient at 4.4 W, the total budget is 42.17 °C/W; after 2.07 junction-to-case and 2.83 case-to-heatsink, the heatsink must be at most 37.27 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "247.39",
+    "198.15",
+    "2.06",
+    "0.86",
+    "0.49"
+   ],
+   "expect": "To hold a 247.39 °C junction over a 198.15 °C ambient at 2.06 W, the total budget is 23.9 °C/W; after 0.86 junction-to-case and 0.49 case-to-heatsink, the heatsink must be at most 22.55 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "172.82",
+    "134.53",
+    "1.55",
+    "3.7",
+    "5.92"
+   ],
+   "expect": "To hold a 172.82 °C junction over a 134.53 °C ambient at 1.55 W, the total budget is 24.7 °C/W; after 3.7 junction-to-case and 5.92 case-to-heatsink, the heatsink must be at most 15.08 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "224.87",
+    "21.46",
+    "21.57",
+    "7.56",
+    "1.33"
+   ],
+   "expect": "To hold a 224.87 °C junction over a 21.46 °C ambient at 21.57 W, the total budget is 9.43 °C/W; after 7.56 junction-to-case and 1.33 case-to-heatsink, the heatsink must be at most 0.54 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "275.41",
+    "26.09",
+    "25.28",
+    "1.18",
+    "2.18"
+   ],
+   "expect": "To hold a 275.41 °C junction over a 26.09 °C ambient at 25.28 W, the total budget is 9.86 °C/W; after 1.18 junction-to-case and 2.18 case-to-heatsink, the heatsink must be at most 6.5 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "199.14",
+    "17.58",
+    "13.19",
+    "3.2",
+    "5.05"
+   ],
+   "expect": "To hold a 199.14 °C junction over a 17.58 °C ambient at 13.19 W, the total budget is 13.76 °C/W; after 3.2 junction-to-case and 5.05 case-to-heatsink, the heatsink must be at most 5.51 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "229.01",
+    "136.49",
+    "16.37",
+    "0.82",
+    "2.98"
+   ],
+   "expect": "To hold a 229.01 °C junction over a 136.49 °C ambient at 16.37 W, the total budget is 5.65 °C/W; after 0.82 junction-to-case and 2.98 case-to-heatsink, the heatsink must be at most 1.85 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "219.31",
+    "14.7",
+    "11.19",
+    "6.55",
+    "5.42"
+   ],
+   "expect": "To hold a 219.31 °C junction over a 14.7 °C ambient at 11.19 W, the total budget is 18.29 °C/W; after 6.55 junction-to-case and 5.42 case-to-heatsink, the heatsink must be at most 6.32 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "210.94",
+    "16.14",
+    "17.34",
+    "2.72",
+    "0.86"
+   ],
+   "expect": "To hold a 210.94 °C junction over a 16.14 °C ambient at 17.34 W, the total budget is 11.23 °C/W; after 2.72 junction-to-case and 0.86 case-to-heatsink, the heatsink must be at most 7.65 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "267.41",
+    "75.58",
+    "12.6",
+    "2.09",
+    "7.08"
+   ],
+   "expect": "To hold a 267.41 °C junction over a 75.58 °C ambient at 12.6 W, the total budget is 15.22 °C/W; after 2.09 junction-to-case and 7.08 case-to-heatsink, the heatsink must be at most 6.05 °C/W."
+  },
+  {
+   "fn": "heatsink",
+   "args": [
+    "228.63",
+    "6.91",
+    "18.29",
+    "1.18",
+    "6.43"
+   ],
+   "expect": "To hold a 228.63 °C junction over a 6.91 °C ambient at 18.29 W, the total budget is 12.12 °C/W; after 1.18 junction-to-case and 6.43 case-to-heatsink, the heatsink must be at most 4.51 °C/W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "172.24",
+    "35.14",
+    "596.57",
+    "39.36",
+    "245.64"
+   ],
+   "expect": "With 881.57 °C/W total junction-to-air and 137.1 °C of rise to spend, the part can dissipate at most 0.16 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "276.41",
+    "269.55",
+    "820.57",
+    "997.91",
+    "83.51"
+   ],
+   "expect": "With 1901.99 °C/W total junction-to-air and 6.86 °C of rise to spend, the part can dissipate at most 0 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "88.84",
+    "34.72",
+    "923.93",
+    "743.29",
+    "402.12"
+   ],
+   "expect": "With 2069.34 °C/W total junction-to-air and 54.12 °C of rise to spend, the part can dissipate at most 0.03 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "278.28",
+    "271.9",
+    "694.39",
+    "690.25",
+    "767.97"
+   ],
+   "expect": "With 2152.61 °C/W total junction-to-air and 6.38 °C of rise to spend, the part can dissipate at most 0 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "259.97",
+    "150.5",
+    "966.48",
+    "95.05",
+    "493.52"
+   ],
+   "expect": "With 1555.05 °C/W total junction-to-air and 109.47 °C of rise to spend, the part can dissipate at most 0.07 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "259.76",
+    "77.83",
+    "755.9",
+    "996.14",
+    "573.79"
+   ],
+   "expect": "With 2325.83 °C/W total junction-to-air and 181.93 °C of rise to spend, the part can dissipate at most 0.08 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "287.89",
+    "272.42",
+    "621.16",
+    "130.69",
+    "354.18"
+   ],
+   "expect": "With 1106.03 °C/W total junction-to-air and 15.47 °C of rise to spend, the part can dissipate at most 0.01 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "258.37",
+    "207.85",
+    "302.71",
+    "92.43",
+    "899.1"
+   ],
+   "expect": "With 1294.24 °C/W total junction-to-air and 50.52 °C of rise to spend, the part can dissipate at most 0.04 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "265.78",
+    "163.96",
+    "450.77",
+    "45.94",
+    "243.78"
+   ],
+   "expect": "With 740.49 °C/W total junction-to-air and 101.82 °C of rise to spend, the part can dissipate at most 0.14 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "172.55",
+    "73.99",
+    "600.27",
+    "666.57",
+    "255.58"
+   ],
+   "expect": "With 1522.42 °C/W total junction-to-air and 98.56 °C of rise to spend, the part can dissipate at most 0.06 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "221.16",
+    "176.23",
+    "827.89",
+    "740.37",
+    "210.02"
+   ],
+   "expect": "With 1778.28 °C/W total junction-to-air and 44.93 °C of rise to spend, the part can dissipate at most 0.03 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "271.5",
+    "152.91",
+    "97.73",
+    "809.28",
+    "545.02"
+   ],
+   "expect": "With 1452.03 °C/W total junction-to-air and 118.59 °C of rise to spend, the part can dissipate at most 0.08 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "121.54",
+    "22.47",
+    "206.75",
+    "980.96",
+    "289.63"
+   ],
+   "expect": "With 1477.34 °C/W total junction-to-air and 99.07 °C of rise to spend, the part can dissipate at most 0.07 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "289.29",
+    "245.83",
+    "611.98",
+    "604.01",
+    "275.04"
+   ],
+   "expect": "With 1491.03 °C/W total junction-to-air and 43.46 °C of rise to spend, the part can dissipate at most 0.03 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "217.71",
+    "134.29",
+    "122.74",
+    "304.08",
+    "209.87"
+   ],
+   "expect": "With 636.69 °C/W total junction-to-air and 83.42 °C of rise to spend, the part can dissipate at most 0.13 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "243.41",
+    "106.45",
+    "461.45",
+    "619.33",
+    "183.3"
+   ],
+   "expect": "With 1264.08 °C/W total junction-to-air and 136.96 °C of rise to spend, the part can dissipate at most 0.11 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "195.37",
+    "190.95",
+    "1.09",
+    "951.08",
+    "831.83"
+   ],
+   "expect": "With 1784 °C/W total junction-to-air and 4.42 °C of rise to spend, the part can dissipate at most 0 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "284.99",
+    "209.23",
+    "798.01",
+    "785.89",
+    "905.26"
+   ],
+   "expect": "With 2489.16 °C/W total junction-to-air and 75.76 °C of rise to spend, the part can dissipate at most 0.03 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "212.77",
+    "102.85",
+    "68.01",
+    "218.54",
+    "902.05"
+   ],
+   "expect": "With 1188.6 °C/W total junction-to-air and 109.92 °C of rise to spend, the part can dissipate at most 0.09 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "256.94",
+    "251.51",
+    "219.84",
+    "564.81",
+    "792.88"
+   ],
+   "expect": "With 1577.53 °C/W total junction-to-air and 5.43 °C of rise to spend, the part can dissipate at most 0 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "221.27",
+    "195.5",
+    "159.37",
+    "426.67",
+    "395.99"
+   ],
+   "expect": "With 982.03 °C/W total junction-to-air and 25.77 °C of rise to spend, the part can dissipate at most 0.03 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "283.67",
+    "268.33",
+    "834.25",
+    "233.08",
+    "850.36"
+   ],
+   "expect": "With 1917.69 °C/W total junction-to-air and 15.34 °C of rise to spend, the part can dissipate at most 0.01 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "123.42",
+    "73.03",
+    "999.58",
+    "917.93",
+    "612.77"
+   ],
+   "expect": "With 2530.28 °C/W total junction-to-air and 50.39 °C of rise to spend, the part can dissipate at most 0.02 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "216.72",
+    "201.87",
+    "878.67",
+    "930.58",
+    "527.05"
+   ],
+   "expect": "With 2336.3 °C/W total junction-to-air and 14.85 °C of rise to spend, the part can dissipate at most 0.01 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "261.56",
+    "137.61",
+    "91.19",
+    "925.66",
+    "909.7"
+   ],
+   "expect": "With 1926.55 °C/W total junction-to-air and 123.95 °C of rise to spend, the part can dissipate at most 0.06 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "299.47",
+    "294.52",
+    "341.11",
+    "418.83",
+    "628.92"
+   ],
+   "expect": "With 1388.86 °C/W total junction-to-air and 4.95 °C of rise to spend, the part can dissipate at most 0 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "269.48",
+    "168.72",
+    "75.48",
+    "122.21",
+    "161.34"
+   ],
+   "expect": "With 359.03 °C/W total junction-to-air and 100.76 °C of rise to spend, the part can dissipate at most 0.28 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "72.3",
+    "40.71",
+    "531.52",
+    "404.64",
+    "246.88"
+   ],
+   "expect": "With 1183.04 °C/W total junction-to-air and 31.59 °C of rise to spend, the part can dissipate at most 0.03 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "293.66",
+    "180.55",
+    "555.66",
+    "132.99",
+    "440.13"
+   ],
+   "expect": "With 1128.78 °C/W total junction-to-air and 113.11 °C of rise to spend, the part can dissipate at most 0.1 W."
+  },
+  {
+   "fn": "headroom",
+   "args": [
+    "146.07",
+    "93.58",
+    "476.09",
+    "211.15",
+    "820.68"
+   ],
+   "expect": "With 1507.92 °C/W total junction-to-air and 52.49 °C of rise to spend, the part can dissipate at most 0.03 W."
+  }
+ ],
+ "errors": [
+  [
+   "junction",
+   [
+    "0",
+    "25",
+    "2.5",
+    "0.5",
+    "8.5"
+   ]
+  ],
+  [
+   "junction",
+   [
+    "10",
+    "25",
+    "0",
+    "0.5",
+    "8.5"
+   ]
+  ],
+  [
+   "junction",
+   [
+    "10",
+    "300.01",
+    "2.5",
+    "0.5",
+    "8.5"
+   ]
+  ],
+  [
+   "junction",
+   [
+    "10",
+    "25",
+    "1000.01",
+    "0.5",
+    "8.5"
+   ]
+  ],
+  [
+   "junction",
+   [
+    "10.005",
+    "25",
+    "2.5",
+    "0.5",
+    "8.5"
+   ]
+  ],
+  [
+   "heatsink",
+   [
+    "25",
+    "25",
+    "10",
+    "2.5",
+    "0.5"
+   ]
+  ],
+  [
+   "heatsink",
+   [
+    "24",
+    "25",
+    "10",
+    "2.5",
+    "0.5"
+   ]
+  ],
+  [
+   "heatsink",
+   [
+    "50",
+    "25",
+    "100",
+    "2.5",
+    "0.5"
+   ]
+  ],
+  [
+   "heatsink",
+   [
+    "150",
+    "25",
+    "0",
+    "2.5",
+    "0.5"
+   ]
+  ],
+  [
+   "heatsink",
+   [
+    "150.001",
+    "25",
+    "10",
+    "2.5",
+    "0.5"
+   ]
+  ],
+  [
+   "headroom",
+   [
+    "25",
+    "25.5",
+    "2.5",
+    "0.5",
+    "8.5"
+   ]
+  ],
+  [
+   "headroom",
+   [
+    "150",
+    "25",
+    "0",
+    "0.5",
+    "8.5"
+   ]
+  ],
+  [
+   "headroom",
+   [
+    "150",
+    "25",
+    "2.5",
+    "0.5",
+    "1000.01"
+   ]
+  ]
+ ]
+}
