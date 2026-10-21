@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heatsink Math - app</title>
+<style>
+  :root { --accent:#2f6f6a; --ink:#172726; --paper:#f4f7f6; --soft:#e1ebe9; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #b3c6c3; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #b3c6c3; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#5d7673; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Heatsink Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page works out junction temperatures, heatsink budgets and dissipation limits from the numbers you type: the power times the thermal resistance for the rise, a temperature budget minus the fixed drops for the heatsink, and the budget over the total resistance for the limit. The temperatures, resistances and power are yours to measure or read off your own datasheet. It treats each thermal resistance as fixed, so it has not seen your build and does not know the mounting, the airflow, the interface material or the part variant, and it gives no verdict that a cooling setup is adequate or safe. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The junction truth</h2>
+    <p class="note">Where the junction lands: the power times the total resistance, on top of ambient.</p>
+    <div class="row2">
+      <div><label for="j-p">Power (W)</label><input id="j-p" type="text" value="10"></div>
+      <div><label for="j-ta">Ambient (°C)</label><input id="j-ta" type="text" value="25"></div>
+    </div>
+    <div class="row3">
+      <div><label for="j-rjc">Junction-case (°C/W)</label><input id="j-rjc" type="text" value="2.5"></div>
+      <div><label for="j-rch">Case-heatsink (°C/W)</label><input id="j-rch" type="text" value="0.5"></div>
+      <div><label for="j-rha">Heatsink-air (°C/W)</label><input id="j-rha" type="text" value="8.5"></div>
+    </div>
+    <div class="out" id="j-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The heatsink truth</h2>
+    <p class="note">The most heatsink the budget can carry: the rise to spend, minus the fixed drops, turned back into °C/W.</p>
+    <div class="row3">
+      <div><label for="h-tj">Junction limit (°C)</label><input id="h-tj" type="text" value="150"></div>
+      <div><label for="h-ta">Ambient (°C)</label><input id="h-ta" type="text" value="25"></div>
+      <div><label for="h-p">Power (W)</label><input id="h-p" type="text" value="10"></div>
+    </div>
+    <div class="row2">
+      <div><label for="h-rjc">Junction-case (°C/W)</label><input id="h-rjc" type="text" value="2.5"></div>
+      <div><label for="h-rch">Case-heatsink (°C/W)</label><input id="h-rch" type="text" value="0.5"></div>
+    </div>
+    <div class="out" id="h-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The headroom truth</h2>
+    <p class="note">The most the setup can dissipate: the rise to spend over the total resistance.</p>
+    <div class="row2">
+      <div><label for="m-tj">Junction limit (°C)</label><input id="m-tj" type="text" value="150"></div>
+      <div><label for="m-ta">Ambient (°C)</label><input id="m-ta" type="text" value="25"></div>
+    </div>
+    <div class="row3">
+      <div><label for="m-rjc">Junction-case (°C/W)</label><input id="m-rjc" type="text" value="2.5"></div>
+      <div><label for="m-rch">Case-heatsink (°C/W)</label><input id="m-rch" type="text" value="0.5"></div>
+      <div><label for="m-rha">Heatsink-air (°C/W)</label><input id="m-rha" type="text" value="8.5"></div>
+    </div>
+    <div class="out" id="m-out"></div>
+  </div>
+
+  <footer>Heatsink Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("j-out", () => junctionTruth(v("j-p"), v("j-ta"), v("j-rjc"), v("j-rch"), v("j-rha")));
+    show("h-out", () => heatsinkTruth(v("h-tj"), v("h-ta"), v("h-p"), v("h-rjc"), v("h-rch")));
+    show("m-out", () => headroomTruth(v("m-tj"), v("m-ta"), v("m-rjc"), v("m-rch"), v("m-rha")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
